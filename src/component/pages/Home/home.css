@@ -1,0 +1,150 @@
+body {
+    background-image: url('./raindrop3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.homepage {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    background: linear-gradient(rgb(2, 40, 83), rgb(217, 220, 221));
+    width: 90%;
+    max-width: 750px;
+    margin: 20px auto;
+    border-radius: 40px;
+    padding: 15px;
+    border: solid 2px rgb(148, 148, 148);
+    font-size: 1.8em;
+}
+
+h2 {
+    color: #000000;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.homepage .homehead p {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #000000;
+    background: linear-gradient(rgb(2, 40, 83), rgb(217, 220, 221));
+    width: 90%;
+    max-width: 350px;
+    margin: 10px auto;
+    border-radius: 40px;
+    padding: 10px;
+    border: solid 2px rgb(148, 148, 148);
+}
+
+/* About and Guestbook Sections */
+.about, .guestbook {
+    background: linear-gradient(rgb(243, 243, 243), rgba(87, 214, 214, 0.61));
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.about p, .guestbook p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+.fo {
+    color: #000;
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about:hover, .guestbook:hover {
+    box-shadow: 0px 8px 16px rgba(253, 0, 0, 0.2);
+    background-color: #918585;
+    transform: translateY(-5px);
+}
+
+/* Image in About Section */
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Guestbook link style */
+.guestbook a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.guestbook a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #e71a1a;
+}
+
+footer a {
+    color: #ff0000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    h1, .homepage .homehead p {
+        width: 100%;
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .about, .guestbook {
+        padding: 15px;
+    }
+
+    .about img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .fo {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .about, .guestbook {
+        width: 100%;
+    }
+
+    .about img {
+        width: 100px;
+        height: 100px;
+    }
+}
